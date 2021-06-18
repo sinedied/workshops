@@ -1,0 +1,14 @@
+{
+  "name": "swa-pwa-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "bs export workshop.md --web && cp -Rf preparation dist/"
+  },
+  "keywords": [],
+  "author": "Yohan Lasorsa (@sinedied)",
+  "dependencies": {
+    "backslide": "^3.0.0"
+  }
+}
