@@ -583,7 +583,7 @@ table {
   $factor: 1.5;
   h1 { font-size: 55px * $factor; }
   h2 { font-size: 40px * $factor !important; }
-  p, div, > ul, > ol {
+  > p, :not(.bottom-bar) p, :not(.bottom-bar) div, > ul, > ol {
     font-size: 1.5em;
   }
   &.medium-code {
