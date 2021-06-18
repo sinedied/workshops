@@ -2,12 +2,11 @@
 
 Afin de réaliser ce workshop, vous aurez besoin de: 
 
-- **Node.js**: https://nodejs.org (v12.13 minimum)
+- **Node.js**: https://nodejs.org (v12.15 minimum)
 - **Git**: https://git-scm.com
 - **Un compte GitHub**: https://github.com/join
 - **Un éditeur de code**, par exemple: https://aka.ms/get-vscode
 - **Un navigateur**, par exemple: https://www.microsoft.com/edge
-- La **CLI Gastby**, à installer en copiant la commande suivante dans un terminal: `npm install -g gatsby-cli` (nécessite d'avant installé Node.js avant)
 - **Une souscription Azure**, voir ci-dessous pour les détails
 
 ## Configurer son compte Azure
@@ -34,7 +33,7 @@ Vous pouvez maintenant [vérifier si tout est prêt pour la prochaine étape](#s
 
 ### Je suis étudiant :id=student
 
-En tant qu'étudiant, vous avez probablement accès à l'offre **Azure For Students**.
+En tant qu'étudiant, vous avez peut-être accès à l'offre **Azure For Students**.
 Pour le savoir, rendez-vous sur la [page dédiée][azure-student], et cliquez sur **Activate Now**.
 On vous demandera alors de confirmer vos informations personnelles, ainsi que votre numéro de téléphone afin de recevoir
 un SMS de validation.
@@ -89,7 +88,7 @@ Vous pouvez maintenant [vérifier si tout est prêt pour la prochaine étape](#s
 ### Je suis un abonné Visual Studio / MSDN :id=vss
 
 Vous avez accès à un crédit mensuel gratuit dans le cadre de votre abonnement. Si vous ne l'avez pas déjà activé,
-il suffit d'aller sur la [page dédiée](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/?WT.mc_id=javascript-19816-yolasors)
+il suffit d'aller sur la [page dédiée](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/?WT.mc_id=javascript-32417-yolasors)
 puis de cliquer sur le bouton **activer**.
 
 Vous pouvez maintenant [vérifier si tout est prêt pour la prochaine étape](#self-check).
@@ -117,10 +116,10 @@ l'élément ![](./img/check-01.png)
 
 **Félicitations**, vous êtes prêt pour le workshop! 🥳
 
-[azurepass]: https://www.microsoftazurepass.com/?WT.mc_id=javascript-19816-yolasors
-[azure-portal]: https://portal.azure.com/?feature.customportal=false&WT.mc_id=javascript-19816-yolasors
-[azure-free-trial]: https://azure.microsoft.com/free/?WT.mc_id=javascript-19816-yolasors
-[azure-student]: https://azure.microsoft.com/free/students/?WT.mc_id=javascript-19816-yolasors
+[azurepass]: https://www.microsoftazurepass.com/?WT.mc_id=javascript-32417-yolasors
+[azure-portal]: https://portal.azure.com/?feature.customportal=false&WT.mc_id=javascript-32417-yolasors
+[azure-free-trial]: https://azure.microsoft.com/free/?WT.mc_id=javascript-32417-yolasors
+[azure-student]: https://azure.microsoft.com/free/students/?WT.mc_id=javascript-32417-yolasors
 
 ---
 Merci à [Christopher Maneu](https://twitter.com/cmaneu) pour ces instructions détaillées en français.
