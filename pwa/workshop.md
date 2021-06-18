@@ -41,7 +41,7 @@ class: left, no-bar, primary, no-counter
 
 | | |
 |---------------|-----------------|
-| Node.js v12+ | https://nodejs.org |
+| Node.js v12.15+ | https://nodejs.org |
 | Git | https://git-scm.com |
 | GitHub account | https://github.com/join |
 | Azure account | https://aka.ms/student/azure |
@@ -52,7 +52,7 @@ class: left, no-bar, primary, no-counter
 
 # Who are we?
 
-.table.row.middle[
+.table.row.middle.center[
 .col-4.center[
   .w-70.responsive.avatar.bounceInLeft.animated[![](images/photo.jpg)]
 
@@ -65,12 +65,6 @@ class: left, no-bar, primary, no-counter
   **Olivier Leplus**<br>
   .fab.fa-twitter[] .e[@olivierleplus]
 ]
-.col-4.center[
-  .w-70.responsive.avatar.bounceInRight.animated[![](images/wassim.jpg)]
-
-  **Wassim Chegham**<br>
-  .fab.fa-twitter[] .e[@manekinekko]
-]
 ]
 
 ---
@@ -80,9 +74,28 @@ class: middle
 
 ---
 
+
+
+
+
+
+
+---
+
 class: impact, left
 # #1
 ## Bootstrap app, setup repo & deploy
+
+---
+
+# Test your setup
+
+Open a terminal and type:
+
+```sh
+node --version
+git --version
+```
 
 ---
 
@@ -100,7 +113,7 @@ cd my-pwa
 ng serve --open
 ```
 
----
+<!-- ---
 
 # Build for production
 
@@ -112,7 +125,7 @@ Edit `package.json` and change build script to:
 Commit changes:
 ```sh
 git add . && git commit -m "build for prod"
-```
+``` -->
 
 ---
 
@@ -127,21 +140,22 @@ git add . && git commit -m "build for prod"
 2. Push your code to the repo:
   ```sh
   git remote add origin git@github.com:<USER>/<REPO>.git
-  git push -u origin master
+  git branch -M main
+  git push -u origin main
   ```
 
 ---
 
-# Azure Static Web Apps (SWA)
+# Azure Static Web Apps .float-right.small[[aka.ms/docs/swa](https://aka.ms/docs/swa)]
 
-## What's Azure SWA(G)?
+## What's SWA?
+
 .quote[
-  <br>
-> It's an all-inclusive hosting service for web apps with serverless APIs built using JavaScript, based on continuous deployment from a GitHub repository.
+> It's an all-inclusive **hosting service** for web apps with **serverless APIs**, based on a continuous integration and deployment pipeline from a GitHub or Azure DevOps repository.
 ]
 
 **Provides**:<br>
-CI/CD, assets hosting, APIs, SSL certificate, route control, authentication, authorization, CDN, staging environment... More info: [aka.ms/docs/swa](https://aka.ms/docs/swa)
+CI/CD, assets hosting, APIs, SSL certificate, route control, authentication, authorization, CDN, staging environments...
 
 ---
 
@@ -171,9 +185,9 @@ class: impact, left
 
 1. Open your deployed website URL
 
-2. Open DevTools with `F12` or `CTRL+OPTION+COMMAND` (Mac)
+2. Open DevTools with `F12` or `OPTION+COMMAND+I` (Mac)
 
-3. Navigate to **Lighthouse** tab (**Audits** on older versions)
+3. Navigate to **Lighthouse** tab
 
 4. Click on **Generate report**
 
