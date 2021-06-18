@@ -21,7 +21,7 @@ correspond le mieux à votre situation :
 - [J'ai déjà un abonnement](#already-sub)
 - [Je suis étudiant](#student)
 - [Je suis un abonné MSDN/Visual Studio](#vss)
-- [J'ai un Azure Pass](#azure-pass) (Si vous n'avez pas de compte étudiant, un Azure Pass vous sera donné au début du workshop)
+- [J'ai un Azure Pass](#azure-pass) ([Cliquez ici](https://thankful-forest-09176b503.azurestaticapps.net/event/swc210622) pour en récupérer un)
 - [Je n'ai rien de tout cela](#nothing)
 
 ### J'ai déjà un abonnement Azure :id=already-sub
