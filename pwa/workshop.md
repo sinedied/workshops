@@ -39,7 +39,7 @@ class: left, no-bar, primary, no-counter
 
 ---
 
-# Prerequisites
+# Prerequisites .float-right.small[[aka.ms/spwa-pre](https://aka.ms/spwa-pre)]
 
 | | |
 |---------------|-----------------|
