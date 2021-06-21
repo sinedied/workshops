@@ -327,7 +327,7 @@ class: center
 ### Average internet speed by country
 
 .no-margin.up[
-.col-10.responsive[![](images/avg-speed.png)]
+.w-80.responsive[![](images/avg-speed.png)]
 ]
 
 ???
