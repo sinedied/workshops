@@ -11,7 +11,7 @@ To follow this workshop, you'll need:
 
 ## Configure your Azure account
 
-> For the SimpleWebConf workshop, (👉 [click here](https://thankful-forest-09176b503.azurestaticapps.net/event/swc210622) to redeem an Azure Pass with 50$ credits.
+> For the SimpleWebConf workshop, 👉 [click here](https://thankful-forest-09176b503.azurestaticapps.net/event/swc210622) to redeem an Azure Pass with 50$ credits.
 
 There are different ways to get a Microsoft Azure subscription.
 This account is necessary to create Azure resources for this workshop.
