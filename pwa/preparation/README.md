@@ -1,120 +1,109 @@
-# Préparez votre environnement
+# Prepare your environment
 
-Afin de réaliser ce workshop, vous aurez besoin de: 
+To follow this workshop, you'll need:
 
 - **Node.js**: https://nodejs.org (v12.15 minimum)
 - **Git**: https://git-scm.com
-- **Un compte GitHub**: https://github.com/join
-- **Un éditeur de code**, par exemple: https://aka.ms/get-vscode
-- **Un navigateur**, par exemple: https://www.microsoft.com/edge
-- **Une souscription Azure**, voir ci-dessous pour les détails
+- **A GitHub account**: https://github.com/join
+- **A code editor**, for example: https://aka.ms/get-vscode
+- **A browser**, for example: https://www.microsoft.com/edge
+- **An Azure subscription**, see below for details
 
-## Configurer son compte Azure
+## Configure your Azure account
 
-Il existe différentes manières d'obtenir une souscription à Microsoft Azure. 
-Ce compte est nécessaire afin de créer les ressources Azure pour ce workshop.
-Les ressources utilisées le seront dans les limites des tiers gratuits, il se peut cependant que des frais soient occasionnés en suivant ce workshop.
+> For the SimpleWebConf workshop, (👉 [click here](https://thankful-forest-09176b503.azurestaticapps.net/event/swc210622) to redeem an Azure Pass with 50$ credits.
 
-Afin de vous aider à créer votre compte Azure, choisissez l'option qui 
-correspond le mieux à votre situation :
+There are different ways to get a Microsoft Azure subscription.
+This account is necessary to create Azure resources for this workshop.
+The resources used should all be within the limits of free tiers, still it may be possible that fees are caused by following this workshop.
 
-- [J'ai déjà un abonnement](#already-sub)
-- [Je suis étudiant](#student)
-- [Je suis un abonné MSDN/Visual Studio](#vss)
-- [J'ai un Azure Pass](#azure-pass) (👉 [Cliquez ici](https://thankful-forest-09176b503.azurestaticapps.net/event/swc210622) pour en récupérer un)
-- [Je n'ai rien de tout cela](#nothing)
+To help you create your Azure account, choose the option that best match your situation:
 
-### J'ai déjà un abonnement Azure :id=already-sub
+- [I already have a subscription](#already-sub)
+- [I have a MSDN/Visual Studio subscription](#vss)
+- [I have an Azure Pass](#azure-pass)
+- [I'm a student](#student)
+- [I have nothing of these](#nothing)
 
-C'est une excellente nouvelle ! Il faudra toutefois veiller à vérifier que vous avez les autorisations nécessaires
-afin de pouvoir créer des ressources sur cet abonnement. 
+### I already have an Azure subscription :id=already-sub
 
-Vous pouvez maintenant [vérifier si tout est prêt pour la prochaine étape](#self-check).
+That's excellent news! However, it will be necessary to ensure that you have the necessary authorizations in order to create resources on this subscription.
 
-### Je suis étudiant :id=student
+You can now [check if everything is ready for the next step](#self-check).
 
-En tant qu'étudiant, vous avez peut-être accès à l'offre **Azure For Students**.
-Pour le savoir, rendez-vous sur la [page dédiée][azure-student], et cliquez sur **Activate Now**.
-On vous demandera alors de confirmer vos informations personnelles, ainsi que votre numéro de téléphone afin de recevoir
-un SMS de validation.
+### I have an _Azure Pass_ :id=azure-pass
 
-!> Si, à un moment dans le parcours d'inscription, vos informations de carte bleue vous sont demandées, c'est probablement qu'il y a eu une erreur dans le parcours.
+You are taking part in an event and you were provided an _azure pass_ code?
+In that case, you can use it to create a subscription.
+Before starting, make sure:
 
-Il se peut que votre portail étudiant vous amène directement sur le portail Azure, sans toutefois avoir de souscription
-Azure. Dans ce cas, recherchez "Education" dans la barre de recherche en haut à droite. Sur cette page éducation,
-cliquez sur le bouton **Claim your Azure credit now** afin de démarrer le processus de création d'abonnement.
+- To have a Microsoft account (formerly live). You can create one on [account.microsoft.com](https://account.microsoft.com),
+- That this account has never been used for another Azure subscription. If you have already had a test or paying account with the same address, it will be impossible for you to use the Azure Pass. In that case, you need to create a new Microsoft account.
+
+!> If, at any time during the registration path, your credit card information is required, it's probably that there was a mistake in the process. Ask for help of a Microsoft employee.
+
+1. Go to [microsoftazurepass.com][azurepass] and click **Start**,
+![Redeem pass](./img/redeempass-1.jpg)
+2. Connect with a Microsoft Live account. **You must use a Microsoft account that is not associated with any other Azure subscription**
+3. Check the email used for the account and click on **Confirm Microsoft Account**
+![Confirm account](./img/redeempass-2.jpg)
+4. Enter the Azure Pass code that you received, and then click **Claim Promo Code** (and no, the code present on the
+ screenshot is not valid ;) ),
+![Enter your code](./img/redeempass-3.jpg)
+5. We are validing your account, it takes a few seconds
+![Code Validation](./img/redeempass-4.jpg)
+6. You will then be redirected to a last registration page. Fill out the information, and then click **Next**
+![Entrer les informations](./img/redeempass-5.jpg)
+7. It will only remain the legal part: accept the various contracts and declarations. Check the boxes that you accept, and if possible, click on the button **Subscribe**
+![Accept legal contractss](./img/redeempass-6.jpg)
+
+Another a few minutes of waiting, and that's it, your account is created! Take a few minutes to perform the visit and familiarize yourself with the Azure portal interface.
+
+![Azure portal](./img/redeempass-7.jpg)
+
+You can now [check if everything is ready for the next step](#self-check).
+
+### I have a MSDN/Visual Studio subscription :id=vss
+
+You have access to a free monthly credit as part of your subscription. If you have not already activated it, Just go on the [dedicated page](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/?WT.mc_id=javascript-32417-yolasors)
+then click on the **activate** button.
+
+You can now [check if everything is ready for the next step](#self-check).
+
+### I'm a student :id=student
+
+As a student, you may have access to the **Azure For Students** offer.
+To find out, go to the [dedicated page][azure-student], and click on **Activate Now**.
+You will then be asked to confirm your personal information, as well as your phone number to receive a SMS validation.
+
+!> If, at any time during the registration path, your credit card information is required, it's probably that there was a mistake in the process. Ask for help of a Microsoft employee.
+
+Your student portal may take you directly to the Azure portal, without having any Azure subscription.
+In this case, search for "Education" in the search bar at the top right. On this Education page, click on **Claim your Azure credit now** in order to start the subscription creation process.
 ![](./img/student-1.png)
 
-Dans le cas où votre établissement d'enseignement ne serait pas reconnu, vous pouvez toujours 
-[créer un abonnement d'essai](#nothing).
+In the case where your educational institution is not recognized, you can still [create a trial subscription](#nothing).
 
-Vous pouvez maintenant [vérifier si tout est prêt pour la prochaine étape](#self-check).
+You can now [check if everything is ready for the next step](#self-check).
 
-### Un employé Microsoft m'a communiqué un _Azure Pass_ :id=azure-pass
+### I have nothing of these :id=nothing
 
-Vous êtes sur un événement et un employé vous a communiqué un code _Azure Pass_? Dans ce cas
-vous pouvez l'utiliser afin de créer un abonnement. Avant de démarrer, assurez-vous : 
+You can always create a [free trial subscription][azure-free-trial]. Credit card information will be requested to make sure you are a physical person.
 
-- d'avoir un compte Microsoft (anciennement Live). Vous pouvez en créer un sur [account.microsoft.com](https://account.microsoft.com),
-- que ce compte n'a jamais été utilisé pour un autre abonnement Azure. Si vous avez déjà eu un compte d'essai ou payant
-avec la même adresse, il vous sera alors impossible d'utiliser l'Azure Pass.
+You can now [check if everything is ready for the next step](#self-check).
 
-!> Si, à un moment dans le parcours d'inscription, vos informations de carte bleue vous sont demandées, c'est probablement qu'il y a eu une erreur dans le parcours. Demandez de l'aide à l'employé Microsoft.
+### ✅ Check if your Azure account has been created :id=self-check
 
-1. Rendez-vous sur [microsoftazurepass.com][azurepass] et cliquez sur **Start**,
-![Démarrer l'utilisation du pass](./img/redeempass-1.jpg)
-2. Connectez vous avec un compte Microsoft Live **Vous devez utiliser un compte Microsoft qui n'est associé à aucune
- autre souscription Azure**
-3. Vérifiez l'email du compte utilisé et cliquez sur **Confirm Microsoft Account**
-![Confirmer le compte](./img/redeempass-2.jpg)
-4. Entrez le code que nous vous avons communiqués, puis cliquez sur **Claim Promo Code** (et non, le code présent sur la
- capture d'écran n'est pas valide ;) ),
-![Indiquer son code](./img/redeempass-3.jpg)
-5. Nous validons votre compte, cela prend quelques secondes
-![Validation du code](./img/redeempass-4.jpg)
-6. Nous serez ensuite redirigé vers une dernière page d'inscrption. Remplissez les informations, puis cliquez sur **Suivant**
-![Entrer les informations](./img/redeempass-5.jpg)
-7. Il ne vous restera plus que la partie légale: accepter les différents contrats et déclarations. Cochez les cases que 
-vous acceptez, et si c'est possible, cliquez sur le bouton **Inscription**
-![Accepter les conditions légales](./img/redeempass-6.jpg)
+Before moving on to the next step, we will ensure that your subscription
+has been created. For this, follow these steps:
 
-Encore quelques minutes d'attente, et voilà, votre compte est créé ! Prenez quelques minutes afin d'effectuer la 
-visite et de vous familiariser avec l'interface du portail Azure.
+1. Go to [Azure portal][azure-portal],
+2. In the search bar at the top of the web page, enter "Subscriptions", then click on the item ![](./img/check-01.png)
+3. A list appears, where you must have an element with an active status ![](./img/check-02.png)
 
-![Accueil du portail Azure](./img/redeempass-7.jpg)
+>The screenshot indicates a subscription name _Azure for Students_. This name may differ depending on the type of Azure subscription, as well as who created it.
 
-Vous pouvez maintenant [vérifier si tout est prêt pour la prochaine étape](#self-check).
-
-### Je suis un abonné Visual Studio / MSDN :id=vss
-
-Vous avez accès à un crédit mensuel gratuit dans le cadre de votre abonnement. Si vous ne l'avez pas déjà activé,
-il suffit d'aller sur la [page dédiée](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/?WT.mc_id=javascript-32417-yolasors)
-puis de cliquer sur le bouton **activer**.
-
-Vous pouvez maintenant [vérifier si tout est prêt pour la prochaine étape](#self-check).
-
-### Je n'ai rien de tout cela :id=nothing
-
-Vous pouvez toujours créer un [abonnement d'essai][azure-free-trial]. Les informations de carte bleue vous seront
-demandées afin de s'assurer que vous êtes une personne physique.
-
-Vous pouvez maintenant [vérifier si tout est prêt pour la prochaine étape](#self-check).
-
-### ✅ Vérifions si votre compte Azure a bien été créé  :id=self-check
-
-Avant de passer à l'étape suivante, nous allons nous assurer que votre souscription
-a bien été créée. Pour cela, quelques étapes suffisent : 
-
-1. Rendez-vous sur [le portail Azure][azure-portal],
-2. Dans la barre de recherche en haut de la page web, entrez "Subscriptions", puis cliquez sur
-l'élément ![](./img/check-01.png)
-3. Une liste apparaît, dans laquelle vous devez avoir un élément avec un status Actif ![](./img/check-02.png)
-
->La capture d'écran indique un nom d'abonnement _Azure for Students_. Ce nom
->peut différer en fonction du type d'abonnement Azure, ainsi que de qui l'a créé.
->Il est en effet possible de rennomer son abonnement avec un nom plus de
-
-**Félicitations**, vous êtes prêt pour le workshop! 🥳
+**Congratulations**, You are ready for the Workshop! 🥳
 
 [azurepass]: https://www.microsoftazurepass.com/?WT.mc_id=javascript-32417-yolasors
 [azure-portal]: https://portal.azure.com/?feature.customportal=false&WT.mc_id=javascript-32417-yolasors
@@ -122,4 +111,4 @@ l'élément ![](./img/check-01.png)
 [azure-student]: https://azure.microsoft.com/free/students/?WT.mc_id=javascript-32417-yolasors
 
 ---
-Merci à [Christopher Maneu](https://twitter.com/cmaneu) pour ces instructions détaillées en français.
+Thanks to [Christopher Maneu](https://twitter.com/cmaneu) for these detailed instructions.
