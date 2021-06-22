@@ -790,7 +790,7 @@ export class AppComponent {
       }
       this.hello = await response.text();
     } catch (err) {
-      this.hello = err.message;
+      this.hello = 'Error: ' + err.message;
     }
   }
 }
