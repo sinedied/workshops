@@ -631,9 +631,11 @@ CI/CD, assets hosting, APIs, SSL certificate, route control, authentication, aut
 
 5. In **Build Details**, choose the `Angular` build preset
 
-6. For the **Output location**, enter `dist/my-pwa`
+6. For the **API location**, enter `/api`
 
-7. Click **Review + create**, then **Create**
+7. For the **Output location**, enter `dist/my-pwa`
+
+8. Click **Review + create**, then **Create**
 
 ---
 
@@ -771,7 +773,7 @@ Create a file `function.json` with this:
 
 ---
 
-# Use API in Angular app
+# Use API in Angular app (1/2)
 
 Edit `src/app/app.component.ts`:
 ```ts
@@ -788,6 +790,10 @@ export class AppComponent {
   }
 }
 ```
+
+---
+
+# Use API in Angular app (2/2)
 
 Edit `src/app/app.component.html`:
 ```ts
