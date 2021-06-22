@@ -742,11 +742,13 @@ mkdir hello && cd hello
 Create a file `index.js` with this:
 
 ```js
-module.exports = async function GetHello(context, req) {
+async function GetHello(context, req) {
   context.res = {
-    body: 'Hello from API!'
+    body: 'Hello from API at ' + new Date().toLocaleTimeString()
   };
 };
+
+module.exports = GetHello;
 ```
 ]
 .w-50.float-left.no-margin.space-left[
@@ -783,9 +785,12 @@ export class AppComponent {
   async ngOnInit() {
     try {
       const response = await fetch('api/hello');
+      if (!response.ok) {
+        throw new Error(response.statusText);
+      }
       this.hello = await response.text();
     } catch (err) {
-      this.hello = 'Error: ' + err;
+      this.hello = err.message;
     }
   }
 }
@@ -921,8 +926,7 @@ export class AppComponent {
   ...
 * updateAvailable$ = this.swUpdate.available;
 
-  constructor(private httpClient: HttpClient,
-*             private swUpdate: SwUpdate) {}
+* constructor(private swUpdate: SwUpdate) {}
 
 *  async update() {
 *    await this.swUpdate.activateUpdate();
@@ -937,7 +941,7 @@ export class AppComponent {
 
 Edit `src/app/app.component.html`:
 ```ts
-Message: {{ hello$ | async }}
+Message: {{ hello }}
 
 <p *ngIf="updateAvailable$ | async; else noUpdate">
   An update is available!
