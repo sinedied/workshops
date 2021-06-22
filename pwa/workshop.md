@@ -569,7 +569,7 @@ git --version
 npm install -g @angular/cli@latest
 
 # Create Angular app
-ng new my-pwa --defaults
+ng new my-pwa --minimal --defaults
 cd my-pwa
 
 # Test it
@@ -631,7 +631,9 @@ CI/CD, assets hosting, APIs, SSL certificate, route control, authentication, aut
 
 5. In **Build Details**, choose the `Angular` build preset
 
-6. Click **Review + create**, then **Create**
+6. For the **Output location**, enter `dist/my-pwa`
+
+7. Click **Review + create**, then **Create**
 
 ---
 
@@ -738,13 +740,11 @@ mkdir hello && cd hello
 Create a file `index.js` with this:
 
 ```js
-async function GetHello(context, req) {
+module.exports = async function GetHello(context, req) {
   context.res = {
     body: 'Hello from API!'
   };
 };
-
-module.exports = GetHello;
 ```
 ]
 .w-50.float-left.no-margin.space-left[
@@ -753,7 +753,7 @@ Create a file `function.json` with this:
 {
   "bindings": [
     {
-      "authLevel": "function",
+      "authLevel": "anonymous",
       "type": "httpTrigger",
       "direction": "in",
       "name": "req",
@@ -771,27 +771,31 @@ Create a file `function.json` with this:
 
 ---
 
-# Use API in Angular app (1/2)
+# Use API in Angular app
 
 Edit `src/app/app.component.ts`:
 ```ts
-import { HttpClient } from '@angular/common/http';
-
-...
-
 export class AppComponent {
-  hello$ = this.httpClient.get('api/hello', { responseType: 'text' });
+  hello = '';
 
-  constructor(private httpClient: HttpClient) {}
+  async ngOnInit() {
+    try {
+      const response = await fetch('api/hello');
+      this.hello = await response.text();
+    } catch (err) {
+      this.hello = 'Error: ' + err;
+    }
+  }
 }
 ```
 
 Edit `src/app/app.component.html`:
 ```ts
-Message: {{ hello$ | async }}
+Message: {{ hello }}
 ```
 
 ---
+exclude: true
 
 # Use API in Angular app (2/2)
 
