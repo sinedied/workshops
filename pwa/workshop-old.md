@@ -77,6 +77,87 @@ class: middle
 
 ---
 
+class: center, middle
+
+# Making apps
+<div style="height: 1em"></div>
+
+???
+What means do we have to make apps today?
+
+--
+.w-20.responsive.top.margin-right[
+  ### Web
+  ![](images/web.png)
+]
+--
+.w-20.responsive.top.margin-right[
+  ### Native
+  ![](images/native.png)
+]
+--
+.w-20.responsive.top[
+  ### Hybrid
+  <div style="height: 1em"></div>
+  .w-30.responsive[![](images/cordova.png)]
+  .w-30.responsive[![](images/capacitor.png)]
+  .w-30.responsive[![](images/electron.png)]
+  <br>
+  .w-30.responsive[![](images/nativescript.png)]
+  .w-30.responsive[![](images/react.png)]
+  .w-30.responsive[![](images/flutter.png)]
+]
+
+???
+
+Usually the tech is chosen depending on multiple factors.
+
+--
+
+### .alt-text.large[Cost vs Performance vs Reach]
+--
+.alt-text.large[ ?]
+---
+
+class: alt, middle, impact
+
+## .large[Who **can** use your app?]
+???
+
+Qui peut utiliser votre app?
+
+- platform restrictions
+- device performance
+- network performance
+
+- You have performance tests
+- You have identified persona
+- You have analytics
+
+---
+
+# Survivor bias
+## You may be missing something
+
+.responsive[![](images/survivorship-bias.png)]
+
+???
+Your data may not tell the whole story, and your interpretation of it may biased.
+
+In particular, it's easy to not account for the survivor bias.
+Let me illustrate this:
+
+- On this plane, the red dots shows where the US planes where gunned during WW2.
+- As a result, the military wanted to add armor in these locations.
+- Statistic research group looked at the same data and said that parts where plane were not gunned according to the data should be reinforced.
+- Because the data was only from returning planes: they could have sustained the damagae and get back home.
+
+It can be the same with your users!
+
+That may seem a bit of a strech, but the way today to be sure your app can be used by everyone is to make a PWA, and we'll see why!
+
+---
+
 class: impact
 # .small[What's a .animated.jackInTheBox.ib.alt-text[**PWA**]?]
 
@@ -139,6 +220,80 @@ class: middle
 
 ---
 
+class: dark, middle, center, big-text
+
+# .middle[The 3 principles of]
+
+.w-20.responsive[![](images/pwa-color-w.png)]
+
+---
+
+class: middle, split-slide
+## .large[Fast]
+
+.split.w-70.primary.middle.full[
+  .bg.overlay[
+    ![](images/fast-cat.jpg)
+  ]
+
+.large[53% of users lost if app loading > 3s<br><br>]
+<!-- .margin-top.no-margin[
+  *FCP, TTI, caching, smooth scrolling, response time...*
+] -->
+]
+
+???
+
+FCP, TTI, caching, smooth scrolling, response time...
+
+---
+
+class: middle, split-slide
+## .large[Reliable]
+
+.split.w-70.primary.middle.full[
+  .bg.overlay[
+    ![](images/reliable-cat.jpg)
+  ]
+
+.large[Always work, start quickly<br><br>]
+<!-- .margin-top.no-margin[
+  *Offline support, service worker, Web Storage, IndexedDB...*
+] -->
+]
+
+???
+
+Offline support, service worker, Web Storage, IndexedDB...
+
+---
+
+class: middle, split-slide
+## .large[Engaging]
+
+.split.w-70.primary.middle.full[
+  .bg.overlay[
+    ![](images/engaging-cat.jpg)
+  ]
+
+.large[Feels like a native experience<br><br>]
+<!-- .margin-top.no-margin[
+  *Full screen, Notifications, Home screen shortcut, native features...*
+] -->
+]
+
+???
+
+Full screen, Notifications, Home screen shortcut, native features...
+
+---
+
+exclude: true
+background-image: url(images/why.gif)
+class: dark, contain
+
+---
+
 class: center
 # .sketch.large[Benefits for users]
 
@@ -168,8 +323,23 @@ class: center
 
 ---
 
+class: center
+### Average internet speed by country
+
+.no-margin.up[
+.w-80.responsive[![](images/avg-speed.png)]
+]
+
+???
+
+- Not everyone have 4G, let even 3G
+- Map in Mbps
+
+---
+
 class: center, full, cover, overlay-dark, no-bullet
 background-image: url(images/money.jpg)
+
 
 # .sketch.large[Benefits for developers]
 
@@ -186,6 +356,17 @@ background-image: url(images/money.jpg)
 ???
 - Portable, reuse standard tech
 - Who needs Apple approval?
+
+---
+
+class: middle, split-slide, impact, left, alt
+# How?
+
+.split.w-50.primary.middle.full[
+  .bg.width[
+    ![](images/how.jpg)
+  ]
+]
 
 ---
 class: no-bullet, big-text, center, clist
@@ -229,6 +410,133 @@ class: big-text, center, dark, hide-handle
 <br><br>
 .w-80.responsive[![](images/sw-overview-2.png)]
 .fade.small.light-text[[developers.google.com/web/updates/2018/05/beyond-spa](https://developers.google.com/web/updates/2018/05/beyond-spa)]
+
+---
+
+class: big-text, hide-handle
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] Service Worker
+]
+.head-spacer[
+]
+
+## Libraries
+
+- WorkBox
+- @angular/service-worker
+- UpUp
+- offline-plugin for Webpack
+
+.full-layer.right.space-right.through[
+  <div style="height: 3em"></div>
+  .w-40.responsive.rounded[![](images/workers.jpg)]
+]
+
+---
+class: big-text, middle, center, hide-handle
+.head.dark.baseline[
+# .fit[![](images/pwa-color-w.png)] .light-text[[serviceworke.rs](https://serviceworke.rs)] - .alt-text[The cookbook]
+]
+<br>
+.responsive[![](images/sw-screenshot.png)]
+
+---
+
+class: big-text, center, middle
+.head.dark.baseline[
+# .fit[![](images/pwa-color-w.png)] Service Worker - .alt-text[Can I use it?]
+]
+.head-spacer[]
+
+.responsive[![](images/sw-ready.png)]
+
+.small[[jakearchibald.github.io/isserviceworkerready/](https://jakearchibald.github.io/isserviceworkerready/)]
+
+---
+
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] Web App Manifest
+]
+<br><br><br>
+.no-margin[
+```html
+<link rel="manifest" href="manifest.webmanifest"/>
+```
+]
+--
+.no-margin[
+```json
+{
+  "name": "My Awesome PWA",
+  "short_name": "My PWA",
+  "theme_color": "#488aff",
+  "background_color": "#488aff",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "assets/icon@512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    ...
+  ]
+}
+```
+]
+
+---
+
+class: center, hide-handle
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] Web App Manifest - .alt-text[Can I use it?]
+]
+<br><br><br>
+
+.responsive[![](images/manifest-can.png)]
+.no-margin[
+  [caniuse.com/web-app-manifest](https://caniuse.com/web-app-manifest)
+]
+
+---
+
+class: center
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] TTI < 10s on 3G
+]
+<div style="height: 4em"></div>
+
+???
+One goal
+--
+# .alt-text[🏎️ **GO FAST!** 🏎️]
+
+.w-40.responsive.rounded[![](images/fast.gif)]
+
+---
+
+class: center
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] TTI < 10s on 3G
+]
+.head-spacer[]
+
+# Lighthouse
+
+.w-50.responsive[![](images/lighthouse.png)]
+
+---
+
+class: center, hide-handle
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] TTI < 10s on 3G
+]
+<div style="height: 3em"></div>
+.w-90.responsive[![](images/lighthouse-example.jpg)]
+
+???
+- Chrome audit tab
+- Also NPM package for CI
 
 ---
 
