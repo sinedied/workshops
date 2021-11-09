@@ -2,7 +2,7 @@
 
 Afin de réaliser ce workshop, vous aurez besoin de: 
 
-- **Node.js**: https://nodejs.org (v12.15 minimum)
+- **Node.js**: https://nodejs.org (v14.17 minimum)
 - **Git**: https://git-scm.com
 - **Un compte GitHub**: https://github.com/join
 - **Un éditeur de code**, par exemple: https://aka.ms/get-vscode
@@ -10,6 +10,8 @@ Afin de réaliser ce workshop, vous aurez besoin de:
 - **Une souscription Azure**, voir ci-dessous pour les détails
 
 ## Configurer son compte Azure
+
+> Pour le workshop du DevFest Strasbourg 👉 [cliquez ici](https://azcheck.in/woc210923) pour récupérer un Azure Pass avec 50$ de credits.
 
 Il existe différentes manières d'obtenir une souscription à Microsoft Azure. 
 Ce compte est nécessaire afin de créer les ressources Azure pour ce workshop.

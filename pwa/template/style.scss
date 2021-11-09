@@ -925,6 +925,12 @@ hr {
   align-items: center;
 }
 
+.no-thead {
+  thead {
+    display: none;
+  }
+}
+
 // Fix PDF print with chrome
 // ---------------------------------------------------------------------------
 

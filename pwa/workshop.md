@@ -39,6 +39,7 @@ class: left, no-bar, primary, no-counter
 
 ---
 
+class: no-thead
 # Prerequisites .float-right.small[[aka.ms/spwa-pre](https://aka.ms/spwa-pre)]
 
 | | |
@@ -49,6 +50,8 @@ class: left, no-bar, primary, no-counter
 | Azure account | https://aka.ms/student/azure |
 | A code editor | https://aka.ms/get-vscode |
 | A chromium-based browser | https://www.microsoft.com/edge |
+
+👉 .primary-text[Get an Azure Pass with 50$ credits: [azcheck.in/woc210923](https://azcheck.in/woc210923)]
 
 ---
 
