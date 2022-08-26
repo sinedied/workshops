@@ -1,4 +1,5 @@
 ---
+title: Portfolio Workshop
 description: This is a workshop for...
 authors: Yohan Lasorsa
 contacts: '@sinedied'
